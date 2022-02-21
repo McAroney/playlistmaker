@@ -7,7 +7,8 @@ But the API is limited to using only one query string that "blindly" searches al
 The app is currently written on one single JS file but can easily be refactored into smaller components.
 
 ## installation
-```npm install```
+```
+    npm install```
 
 The App was compiled from scratch and no boilerplates were used and as such has very little "excess bloat" packages.
 
