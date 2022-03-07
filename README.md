@@ -30,4 +30,10 @@ that adds the respected track to a playlist
 Under the search bar, a playlist view is generated. Small icons that show the genre of the added track and its respected title
 To the top right-hand side an **X** icon appears that deletes the respected track from the playlist.
 
+### Playlist Editor
+
+User can view, rename and delete individual playlists. 
+
+
+
 I made a short video describing the functionality [here]https://youtu.be/4CWTQ4_czcE)
