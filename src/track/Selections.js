@@ -12,11 +12,15 @@ export default function Selections() {
      return selected && selected.length>1 ? <Button onClick={ () => dispatch(playlistsave() )}>Save Playlist</Button> : '';
     }
 
+  const unselect = (obj) => {
+    dispatch(trackunselect(obj));
+  }
+
   return(
       <span className="selecteds">
       {selected.map( (obj, i) =>
         <div className="card" key={i}>
-            <Button className="delete-icon" key={"button-"+i} onClick={() => dispatch(trackunselect({obj})) }>X</Button>
+            <Button className="delete-icon" key={"button-"+i} onClick={() => unselect(obj) }>X</Button>
             {/* using "obj" JSX Evaluation expression for readability here.. */}
             <div className="genre">{obj.obj.genre}</div>
             <h4>{obj.obj.title}</h4>
