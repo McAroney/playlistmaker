@@ -1,15 +1,23 @@
-body {width: 1900px}
-.heading,.sub-heading{
-    color:green;
-    text-align: center;
-}input {width: 90%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px;;}
-.playlist {background-color: rgb(180, 201, 201); display: inline-block; margin-right: 5px; margin-left: 5px; width: fit-content;
-    color: white; text-align: center; padding: 5px; margin-bottom: 10px;;}
-.playlist .header {background-color: rgb(165, 113, 152);}
-.playlist .header .delete {float: right; margin-right: -10px; margin-top: -20px; background-color: red; color: white; border-radius: 8px; height: 20px; font-size: 20px; cursor: pointer;}  
-.card-grid {margin-right: auto; margin-left: auto; max-width: 80%;}
-.card {  width: 380px; min-height: 300px; display: grid inline; text-align: center; background-color:  rgb(233, 233, 233);
+ .main-container input {width: 95%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px;}
+
+ .button {margin: 5px; color: white; background-color:  green; border-radius: 3px;}
+ .link .playlist-button { text-decoration: none; margin: 10px; padding: 5px; color: white; background-color:  green; border-radius: 3px;}
+
+ .main-container .selecteds .card {display: grid inline; margin: 5px; background-color:#88f; overflow-wrap: break-word; width: 140px; text-align: center; color: #434343;}
+ .main-container .selecteds .header {background-color:#8af; margin-bottom: 6px;}
+ .main-container .selecteds .delete-icon {display: block; font-size: 24px;} 
+
+ .main-container .card-grid .card { width: 160px; min-height: 300px; display: inline-block; text-align: center; background-color:  rgb(233, 233, 233);
      overflow-wrap: break-word; margin: 10px; color:rgb(236, 122, 221); padding: 5px; -webkit-box-shadow: 0px 5px 12px 5px rgba(0,0,0,0.56); 
      box-shadow: 0px 5px 12px 5px rgba(0,0,0,0.56); border-radius: 2px;}
-.card img {margin-left: auto; margin-right: auto;}
-.card .genre {background-color: rgb(236, 122, 221); color: white; text-justify: auto; padding-top: 2px; font-weight: bold; margin-bottom: 16px;} 
+.main-container .card-grid .card img {margin-left: auto; margin-right: auto;}
+.main-container .card-grid .card .genre {background-color: rgb(236, 122, 221); color: white; text-justify: auto; padding-top: 2px; font-weight: bold; margin-bottom: 16px;} 
+
+.main-container .playlists { min-height: 80px;}
+.main-container .playlists .playlist-button { margin: 10px; display: inline; background-color: blueviolet; color: white; font-weight: bold; border-radius: 8px; cursor:pointer; width: fit-content; padding: 5px;; }
+
+.playlist-editor input {border: none; font-size: large; color: #84f;}
+.playlist-editor .playlist-items .playlist-track{width: 100%; align-items: center; background-color: #84f; margin: 10px;}
+.playlist-editor .playlist-items .playlist-track img {position: relative; margin-left: 5px; display: block;}
+.playlist-editor .playlist-items .playlist-track h1 {color: #434343;}
+.playlist-editor .playlist-items .playlist-track .genre {color: #434343;}
